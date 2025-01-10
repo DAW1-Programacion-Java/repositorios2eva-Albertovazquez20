@@ -1,16 +1,17 @@
 package Tema4.ejercicio4;
+import java.util.ArrayList;
 
 public class DvdCine {
     private String titulo;
     private String director;
     private String productora;
-    private String[] actoresPrincipales; // Usamos un array para múltiples actores
+    private ArrayList <String> actoresPrincipales; // Usamos un array para múltiples actores
     private String genero;
     private String resumen;
     private int duracion; // Duración en minutos
 
 
-    public DvdCine(String titulo, String director, String productora, String[] actoresPrincipales, String genero, String resumen, int duracion) {
+    public DvdCine(String titulo, String director, String productora, ArrayList<String> actoresPrincipales, String genero, String resumen, int duracion) {
         this.titulo = titulo;
         this.director = director;
         this.productora = productora;
@@ -45,11 +46,11 @@ public class DvdCine {
         this.productora = productora;
     }
 
-    public String[] getActoresPrincipales() {
+    public ArrayList<String> getActoresPrincipales() {
         return actoresPrincipales;
     }
 
-    public void setActoresPrincipales(String[] actoresPrincipales) {
+    public void setActoresPrincipales(ArrayList<String> actoresPrincipales) {
         this.actoresPrincipales = actoresPrincipales;
     }
 

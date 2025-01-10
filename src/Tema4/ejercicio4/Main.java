@@ -1,8 +1,14 @@
 package Tema4.ejercicio4;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        String[] actores = {"Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"};
+        ArrayList<String> actores = new ArrayList<>();
+        actores.add("Leonardo DiCaprio");
+        actores.add("Joseph Gordon-Levitt");
+        actores.add("Elliot Page");
+
+
 
         DvdCine dvd = new DvdCine(
                 "Origen",
