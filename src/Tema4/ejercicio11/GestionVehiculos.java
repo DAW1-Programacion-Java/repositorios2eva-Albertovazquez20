@@ -14,22 +14,32 @@ public class GestionVehiculos {
             String modelo = "Modelo" + (i%10+1);
             int potencia = 100 + i % 50;
             double consumo = 5 + (i % 5) * 0.5;
-            Double precioalquilerdia = 30. + (i%20) * 2;
+            double precioalquilerdia = 30. + (i%20) * 2;
 
             listaVehiculo.add(new VehiculoA(matricula, marca, modelo, potencia, consumo, precioalquilerdia));
 
         }
 
     }
-    public void filtrarPorConsumo(double consumir){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce un consumo");
-        double num = sc.nextDouble();
+    public ArrayList<VehiculoA> filtrarPorConsumo(double consumir){
+        ArrayList<VehiculoA> listaFiltrada = new ArrayList<>();
         for (VehiculoA v : listaVehiculo){
-            if(v.getConsumomedio() <= num){
-                System.out.println(v);
+            if(v.getConsumomedio() <= consumir){
+                listaFiltrada.add(v);
             }
 
+        }return listaFiltrada;
+    }
+    public void mostrarTodos(){
+        for (VehiculoA v : listaVehiculo){
+            System.out.println(v);
         }
+    }
+    public double precioMedAlquiler(){
+        double preciomedio = 0;
+        for (VehiculoA v : listaVehiculo){
+            preciomedio += v.getPrecioalquilerdia();
+        }
+        return preciomedio / listaVehiculo.size();
     }
 }
