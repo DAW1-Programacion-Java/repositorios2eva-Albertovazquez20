@@ -49,6 +49,7 @@ public class App {
 					String id = sc.nextLine();
 					System.out.println("INtroduce su nuevo salario");
 					BigDecimal newsalario = sc.nextBigDecimal();
+
 					if(ge.actualizaSalario(id, newsalario)){
 						System.out.println("Salario actualizado correctamente");
 					}else{
