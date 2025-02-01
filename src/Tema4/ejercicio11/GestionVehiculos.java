@@ -21,6 +21,7 @@ public class GestionVehiculos {
         }
 
     }
+
     public ArrayList<VehiculoA> filtrarPorConsumo(double consumir){
         ArrayList<VehiculoA> listaFiltrada = new ArrayList<>();
         for (VehiculoA v : listaVehiculo){

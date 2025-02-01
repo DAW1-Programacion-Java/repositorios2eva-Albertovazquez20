@@ -13,8 +13,8 @@ public class GestionEmpleados {
 
 	public GestionEmpleados() {
 		try {
-			List<String> lines = Files.readAllLines(Paths.get("empleados.csv"),
-					StandardCharsets.UTF_8);
+			List<String> lines = Files.readAllLines(Paths.get("repositorios2eva-Albertovazquez20/empleados.csv"), StandardCharsets.UTF_8);
+
 			empleados = new Empleado[lines.size()];
 			int i=0;
 			for (String string : lines) {
