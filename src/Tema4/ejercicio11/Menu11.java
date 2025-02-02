@@ -11,7 +11,7 @@ public class Menu11 {
         for (VehiculoA v : lista_consumo) {
             System.out.println(v);
         }
-        System.out.println("Esrtos son todos los vehiculos");
+        System.out.println("Estos son todos los vehiculos");
         gv.mostrarTodos();
 
     }
