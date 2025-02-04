@@ -48,7 +48,7 @@ public class Menu7 {
                     gestion.pedirGenero(pel);
                         System.out.println("Estas son las películas con ese género:");
 
-
+                break;
                 case 4:
                     System.out.println("Introduce un titulo de peli");
                     String peli = sc.nextLine();

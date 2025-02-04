@@ -52,7 +52,7 @@ public class GestionDvd {
                 System.out.println(d.getDuracion());
             }
         }
-        System.out.println("No se encontró la película con el título: " + titu);
+        System.out.println("No se encontró la película con ese título " );
     }
 
 
