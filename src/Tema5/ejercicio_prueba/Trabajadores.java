@@ -39,7 +39,10 @@ public abstract class Trabajadores implements Comparable <Trabajadores>{
 
     public abstract double calcularSalario();
 
-
+    @Override
+    public int compareTo(Trabajadores o) {
+        return this.getNombre().compareTo(o.getNombre());
+    }
 
     @Override
     public String toString() {
@@ -49,5 +52,7 @@ public abstract class Trabajadores implements Comparable <Trabajadores>{
                 ", fechaNacimiento=" + fechaNacimiento +
                 '}';
     }
+
+
 
 }
