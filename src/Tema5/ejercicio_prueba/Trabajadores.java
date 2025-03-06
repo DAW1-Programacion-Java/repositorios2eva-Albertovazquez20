@@ -44,6 +44,7 @@ public abstract class Trabajadores implements Comparable <Trabajadores>{
         return this.getNombre().compareTo(o.getNombre());
     }
 
+
     @Override
     public String toString() {
         return "Trabajadores{" +

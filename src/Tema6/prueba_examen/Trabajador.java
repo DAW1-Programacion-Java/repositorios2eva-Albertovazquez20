@@ -2,7 +2,7 @@ package Tema6.prueba_examen;
 
 import java.time.LocalDate;
 
-public abstract class Trabajador {
+public abstract class Trabajador implements Comparable<Trabajador> {
     private int id;
     private String nombre;
     private LocalDate fechanacimiento;
@@ -36,6 +36,17 @@ public abstract class Trabajador {
     public void setFechanacimiento(LocalDate fechanacimiento) {
         this.fechanacimiento = fechanacimiento;
     }
+
+    @Override
+    public int compareTo(Trabajador o) {
+       if(this.id < o.id){
+           return -1;
+       }if (this.id > o.id){
+           return 1;
+        }
+       return 0;
+    }
+
     public abstract double calcularSalario();
 
     @Override
