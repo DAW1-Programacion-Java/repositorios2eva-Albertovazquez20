@@ -49,7 +49,7 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" +
+        return
                 "id=" + id +
                 ", descripcion='" + descripcion + '\'' +
                 ", fechacaducidad=" + fechacaducidad +
