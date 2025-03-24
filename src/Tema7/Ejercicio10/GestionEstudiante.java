@@ -26,4 +26,20 @@ public class GestionEstudiante {
         }
         return new HashMap<>();
     }
+
+    public Map<Integer, String> getAprobados(){
+        Map<Integer, String> nuevo = new HashMap<>();
+        for (Estudiante e : listaT){
+
+
+
+
+        }
+    }
+
+
+
+
+
 }
+

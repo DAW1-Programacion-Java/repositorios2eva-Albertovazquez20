@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Estudiante {
-    private int id;
+    private Integer id;
     private String nombre;
     private String curso;
     private Map<String, Double> asigNota = new HashMap<>();
 
-    public Estudiante(int id, String nombre, String curso) {
+    public Estudiante(Integer id, String nombre, String curso) {
         this.id = id;
         this.nombre = nombre;
         this.curso = curso;
@@ -20,7 +20,7 @@ public class Estudiante {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
